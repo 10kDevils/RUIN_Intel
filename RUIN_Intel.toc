@@ -1,11 +1,12 @@
-## Interface: 16001
-## Title: |cffc41e3aRUIN|r Intel
+## Interface: 16001, 120105
+## Title: |cffe6b862RUIN|r Intel
 ## Notes: One-button sighting reports (enemy groups, world bosses, rares, buff drops) shared across RUIN.
 ## Author: RUIN
-## Version: 0.3.0
+## Version: 0.3.1
 ## Dependencies: RUIN_Core
 ## SavedVariables: RUIN_IntelDB
 ## IconTexture: Interface\Icons\INV_Misc_Spyglass_03
 ## X-Category: Guild
+## Category: RUIN Gaming Companion App
 
 Intel.lua

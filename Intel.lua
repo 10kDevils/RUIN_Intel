@@ -3,17 +3,17 @@
 -- and every RUIN member gets an alert, an entry in the Intel feed and a pin
 -- on the world map and minimap that fades as the report ages. "Under attack"
 -- calls for help with your position. A timers page tracks world bosses and
--- world buff drops. Sightings are passed to RUIN Warfront when installed.
+-- world buff drops. Enemy sightings mark RUIN Muster rally points contested.
 local ADDON, ns = ...
 local R = RUIN_API
 if not R or (R.apiLevel or 1) < 3 then
-    print("|cffc41e3aRUIN|r Intel needs a newer RUIN Core (0.3.0 or later).")
+    print("|cff54b7d9[RUIN]|r Intel needs a newer RUIN Core (0.3.0 or later).")
     return
 end
 local W = R.Widgets
 local C = W.COLORS
 
-local M = R:RegisterModule("Intel", { version = "0.3.0" })
+local M = R:RegisterModule("Intel", { version = "0.3.1" })
 
 local KINDS = {
     { key = "enemy",  label = "Enemy group",   color = "|cffff4040", rgb = { 1, 0.25, 0.25 }, sound = true,
@@ -129,7 +129,7 @@ function M:AddSpot(d, sender, mine)
     elseif mine then
         self:Print("Reported " .. k.label .. " at " .. d.w .. ".")
     end
-    -- Other RUIN modules (Warfront) react to sightings with a position.
+    -- Other RUIN modules (Muster rally points) react to sightings with a position.
     self:Publish("SPOT", { kind = e.kind, text = e.text, where = e.where, by = sender, t = e.t,
                            map = e.map, x = e.x, y = e.y, mine = mine })
     refreshPage()
