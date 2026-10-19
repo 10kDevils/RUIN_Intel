@@ -1,8 +1,8 @@
 ## Interface: 16001, 120105
-## Title: |cffe6b862RUIN|r Intel
-## Notes: One-button sighting reports (enemy groups, world bosses, rares, buff drops) shared across RUIN.
+## Title: |cffe6b862RUIN|r Intel (retired)
+## Notes: Retired: sightings and timers moved to RUIN Muster. You can remove this addon.
 ## Author: RUIN
-## Version: 0.3.1
+## Version: 0.3.2
 ## Dependencies: RUIN_Core
 ## SavedVariables: RUIN_IntelDB
 ## IconTexture: Interface\Icons\INV_Misc_Spyglass_03

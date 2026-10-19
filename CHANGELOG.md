@@ -6,6 +6,10 @@ Versioning: the third number counts the meaningful changes made since the second
 
 (nothing yet)
 
+## 0.3.2 — 2026-10-19
+
+**RUIN Intel is retired.** Sightings, the under-attack call, map pins and the boss and buff timers moved to RUIN Muster 0.3.4 (Sightings and Timers pages). Starting a group from a sighting is in RUIN Finder 0.3.2. Your saved reports and timers are copied to Muster once. This version only prints a notice after login.
+
 ## 0.3.1 — 2026-10-18
 
 1 change since 0.3.0:
